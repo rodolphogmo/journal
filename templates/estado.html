@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Estado - Journal</title>
+</head>
+<body>
+    <h1>Notícias</h1>
+        <section>
+            <h2>{{estado.get_nome()}}</h2>
+            {% for i in lista_noticias %} 
+            <h3>{{i.get_titulo()}}</h3>
+            <p><a href="http://127.0.0.1:5000/show/{{i.get_id()}}">Ler Notícia</a>
+            {%endfor%}
+        </section>
+</body>
+</html>

@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Journal</title>
+    <title>Home - Journal</title>
 </head>
 <body>
-    
+    <h1>Journal Covid-19</h1>
+    <section>
+        <section>
+            <h2>Notícia mais Curtida</h2>
+            <h3>{{noticia[0].get_titulo()}}</h3>
+            <p><a href="http://127.0.0.1:5000/show/{{noticia[0].get_id()}}">Continuar lendo</a>
+        </section>
+        <section>
+            <h2>Notícia dos Estados</h2>
+            <p><a href="http://127.0.0.1:5000/estado/1">São Paulo</a>
+            <p><a href="http://127.0.0.1:5000/estado/2">Rio de Janeiro</a>
+            <p><a href="http://127.0.0.1:5000/estado/3">Minas Gerais</a>
+            <p><a href="http://127.0.0.1:5000/estado/4">Espírito Santo</a>
+        </section>
+    </section>    
 </body>
 </html>
