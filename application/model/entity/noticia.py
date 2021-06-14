@@ -1,4 +1,4 @@
-from estado import Estado
+from application.model.entity.estado import Estado
 
 class Noticia:
 
